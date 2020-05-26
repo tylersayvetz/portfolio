@@ -43,8 +43,8 @@
 	<script type="text/javascript" src="assets/js/getJson.js"></script>
 	<script type="text/javascript" src="assets/js/drawers.js"></script>
 	<script type="text/javascript">
-		function scrollHeightHandler() {
-			if (window.scrollY >= (height * 1.07) - window.innerHeight) {
+		function scrollHeightHandler(height) {
+			if (window.scrollY >= (height * 1.08) - window.innerHeight) {
 				hideMountains(true)
 				fastScroll(true)
 			} else {
@@ -72,7 +72,7 @@
 		const el = document.getElementById('primary')
 		const height = el.clientHeight;
 
-		document.addEventListener('scroll', scrollHeightHandler)
+		document.addEventListener('scroll', () => scrollHeightHandler(height))
 	</script>
 
 </body>
