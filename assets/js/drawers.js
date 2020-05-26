@@ -1,5 +1,4 @@
-const elements = document.getElementsByClassName('content')
-console.log(elements);
+const elements = document.getElementsByClassName('content');
 
 [...elements].forEach(element => {
   element.addEventListener('mouseenter', (e) => {

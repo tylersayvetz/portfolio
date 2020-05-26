@@ -7,10 +7,12 @@ const data = [
   },
   {
     "content": "some data",
+    "image": "#",
     "link": "#"
   },
   {
     "content": "a blurb or two",
+    "image": "#",
     "link": "#"
   }
 ];
