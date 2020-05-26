@@ -95,6 +95,14 @@ height: 500px;
 .slide-drawer a {
   text-decoration: none;
 }
+.slide-drawer a:hover {
+  text-decoration: none;
+  color: silver;
+}
+.slide-drawer p {
+  font-size: small;
+  margin: 10px;
+}
 
 
 @keyframes slideIn {
