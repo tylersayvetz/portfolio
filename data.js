@@ -12,4 +12,10 @@ const data = [
     "image": "./images/battlefleet-banner-2x.png",
     "link": "http://battlefleet.tylersayvetz.com"
   },
+  {
+    "title": "2048",
+    "content": "A remake of the classic, exponentially additictive time-killer, 2048",
+    "image": "./images/2048-banner-2x.png",
+    "link": "https://tylers2048replica.herokuapp.com/"
+  },
 ];
