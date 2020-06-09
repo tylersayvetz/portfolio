@@ -19,7 +19,15 @@ const elements = document.getElementsByClassName('content');
 });
 
 function slideOut(e) {
-  e.target.firstChild.setAttribute('class', 'slide-drawer');
+  //Collapse all drawers.
+  const cards = document.getElementById('_contentContainer');
+  const drawers = Array.from(cards.childNodes).map(node => node.firstChild)
+  for (const drawer of drawers) {
+    drawer.setAttribute('class', 'drawer')
+  }
+
+  //Slide out the selected drawer
+  e.target.firstChild.setAttribute('class', 'drawer-out');
 }
 
 function slideIn(e) {
@@ -27,6 +35,5 @@ function slideIn(e) {
 }
 
 function toggleSlide(e) {
-if (e.target.firstChild.className === 'slide-drawer') slideIn(e)
-else slideOut(e);
+  return (e.target.firstChild.className === 'drawer-out') ?  slideIn(e) : slideOut(e);
 }
