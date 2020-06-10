@@ -37,6 +37,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .secondary {
@@ -53,7 +54,6 @@ img {
     height: 100vw;
     width: 100%;
     max-width: 500px;
-    margin-bottom: 50px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -134,7 +134,6 @@ img {
     justify-content: flex-start;
     border: none;
     height: unset;
-    margin-bottom: 50px;
     width: 100%;
     padding: 20px;
 }
@@ -177,11 +176,15 @@ body, html, .mountains {
 @media (min-width: 500px) {
   .container {
     height: 500px;
-    margin: 10px;
+    margin: unset;
+  }
+
+  .headshot {
+    height: unset;
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 850px) {
     .mountains-fixed {
         bottom: -115px;
     }
@@ -191,6 +194,7 @@ body, html, .mountains {
         max-height: unset;
         height: 400px;
         width: 400px;
+        margin: 10px;
     }
 
     .headshot {
