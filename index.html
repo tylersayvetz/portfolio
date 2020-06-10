@@ -46,10 +46,10 @@
 		function scrollHeightHandler(height) {
 			if (window.scrollY >= (height * 1.08) - window.innerHeight) {
 				hideMountains(true)
-				fastScroll(true)
+
 			} else {
 				hideMountains(false)
-				fastScroll(false)
+
 			}
 		}
 
@@ -61,12 +61,6 @@
 			else {
 				mountains.removeAttribute('style', 'display')
 			}
-		}
-
-		function fastScroll(action) {
-			const secondary = document.getElementById('secondary')
-			if (action) secondary.setAttribute('style', 'perspective: 4px');
-			else secondary.removeAttribute('style', 'perspective')
 		}
 
 		const el = document.getElementById('primary')

@@ -170,6 +170,10 @@ img {
     max-width: 100%;
 }
 
+body, html, .mountains {
+  width: 100%;
+}
+
 @media (min-width: 500px) {
   .container {
     height: 500px;
