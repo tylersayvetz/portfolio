@@ -29,45 +29,15 @@
 		</div>
 		<div id="_contentContainer" class="content-container"></div>
 	</section>
+
 	<img src="images/mountains.png" class="mountains mountains-fixed" id="mountains" />
 	<img src="images/mountains.png" class="mountains" />
-	<section class="secondary" id="secondary">
 
-	</section>
+	<section class="secondary" id="secondary"></section>
 
-	<!-- <script
-  src="https://code.jquery.com/jquery-3.5.0.min.js"
-  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-	crossorigin=""></script> -->
 	<script type="text/javascript" src="data.js"></script>
 	<script type="text/javascript" src="assets/js/getJson.js"></script>
 	<script type="text/javascript" src="assets/js/drawers.js"></script>
-	<script type="text/javascript">
-		function scrollHeightHandler(height) {
-			if (window.scrollY >= (height * 1.08) - window.innerHeight) {
-				hideMountains(true)
-
-			} else {
-				hideMountains(false)
-
-			}
-		}
-
-		function hideMountains(action) {
-			const mountains = document.getElementById('mountains')
-			if (action) {
-				mountains.setAttribute('style', 'display: none')
-			}
-			else {
-				mountains.removeAttribute('style', 'display')
-			}
-		}
-
-		const el = document.getElementById('primary')
-		const height = el.clientHeight;
-
-		document.addEventListener('scroll', () => scrollHeightHandler(height))
-	</script>
 
 </body>
 
